@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class ImageProcessor {
 
-    public BufferedImage converBlackAndWhite(File originalFile) throws IOException{
+    public BufferedImage binarization(File originalFile) throws IOException{
         try {
             BufferedImage img = ImageIO.read(originalFile);
             for(int row = 0; row < img.getWidth(); row++) {
